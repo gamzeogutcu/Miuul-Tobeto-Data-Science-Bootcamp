@@ -825,15 +825,7 @@ drop_list = high_correlated_cols(df, plot=True)
 df=df.drop(drop_list, axis=1)
 high_correlated_cols(df.drop(drop_list, axis=1), plot=True)
 
-#####Kaggle: train_transaction.csv
-df = pd.read_csv("datasets/fraud_train_transaction.csv")
 
-
-def cal(x, y):
-    print(x * y)
-
-
-cal(10, 40) - 200
 df["sex"].describe([0.25, 0.50, 0.75])
 titanic = sns.load_dataset("titanic")
 sns.countplot(x="class", data=titanic)
